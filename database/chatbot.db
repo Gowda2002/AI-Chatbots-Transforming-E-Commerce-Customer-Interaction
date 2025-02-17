@@ -1,0 +1,16 @@
+-- Table for storing customer queries
+CREATE TABLE Queries (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    query TEXT NOT NULL,
+    status TEXT
+);
+
+-- Table for storing solutions
+CREATE TABLE Solutions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    question TEXT NOT NULL,
+    answer TEXT NOT NULL
+);
+INSERT INTO Solutions (question, answer) VALUES 
+("What is your refund policy?", "We offer a 30-day refund policy."),
+("How can I reset my password?", "You can reset your password using the 'Forgot Password' link.");
